@@ -1,12 +1,14 @@
-# Contains work in the Berkeley Bootcamp
+<h2>Berkeley Bootcamp: Coursework</h2>
 
 
 <h4>Files are as follows: </h4>
-* cheat_sheets: contains quick references
-* class_exercises: contains exercises performed during class
-* class_notes: notes taken during class; generally code snippets
-* prework_th: prework submitted at the beginning of class
 
+<ul>
+    <li>cheat_sheets: contains quick references</li>
+    <li>class_exercises: contains exercises performed during class</li>
+    <li>class_notes: notes taken during class; generally code snippets</li>
+    <li>prework_th: prework submitted at the beginning of class</li>
+</ul>
 <br>
 
 <h4>Future Sections:</h4>
