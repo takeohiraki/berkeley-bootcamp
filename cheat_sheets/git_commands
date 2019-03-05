@@ -1,0 +1,32 @@
+
+https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork
+
+
+1. Create a new branch (can also be used to move between branches / master)
+
+git checkout -b [name_of_your_new_branch]
+
+2. Push the branch to github
+
+git push origin [name_of_your_new_branch]
+
+3. See a list of branches
+
+git branch -a
+
+4. Push a commit on a branch
+
+git push origin [name_of_branch]
+
+5. Merge a branch
+
+git merge [name_of_branch]/develop
+
+6. Delete a branch 
+
+git branch -D [name_of_your_new_branch]
+
+7. Delete branch on Github
+
+git push origin :[name_of_your_new_branch]
