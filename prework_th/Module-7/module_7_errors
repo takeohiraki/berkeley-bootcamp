@@ -1,0 +1,24 @@
+1. Header was not getting treated as a Header
+2. Probably not required, but I commented out the instructions
+
+About:
+3. The text in the "About" section was not being treated as separate paragraphs
+4. Link was not included in the hyperlink section of the code. So the text of the hyperlink was showing without leading to a link
+
+Image:
+5. Image was not working correctly
+6. May not be a bug, but I reordered the following sections in the same order as the Cat example
+
+Grow / Shrink:
+NOTE: I did this by inspecting via Chrome DevTools, so I'm actually not sure what the behavior was before I changed it:
+7. I believe the HTML did not include a section at the bottom to link to the JS file
+8. I believe quote was missing around the "click" 
+
+Colors:
+9. The colors in the html file were not relating to the correct colors
+
+Facts:
+10. The array of facts was missing commas / quotes to separate them
+
+List of favorite things:
+11. Was missing relevant "li" tags to define the different things as part of a list

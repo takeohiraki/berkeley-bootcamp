@@ -1,0 +1,67 @@
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.ariel {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.almond {
+    color: white;
+}
+
+.butterfinger {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.large_font {
+    font-size: 24px;
+}
+
+.small_font {
+    font-size: 10px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.multi {
+    font-size: 24px;
+    color: orange;
+    font-weight: bold;
+}
+
+.styledFont {
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*
+Border width
+Style
+Color
+*/
+
+#styledImage {
+	border: 4px dotted black;
+}
+
