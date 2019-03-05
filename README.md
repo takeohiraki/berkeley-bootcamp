@@ -1,4 +1,4 @@
-<h2>Berkeley Bootcamp: Coursework</h2>
+<h2>Berkeley Coding Bootcamp Coursework</h2>
 
 
 <h4>Files are as follows: </h4>
