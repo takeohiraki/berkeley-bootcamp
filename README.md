@@ -12,4 +12,6 @@
 <br>
 
 <h4>Future Sections:</h4>
-* projects
+<ul>
+    <li>projects</li>
+</ul>
