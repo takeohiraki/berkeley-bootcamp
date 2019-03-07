@@ -3,7 +3,7 @@ https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-man
 https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork
 
 
-########## Creating a branch, committing to it, and merging ##########
+########## Creating a branch, committing to it, and merging (without a PR) ##########
 
 
 1. Create a new branch & push it to github
@@ -15,7 +15,7 @@ git push origin [name_of_your_new_branch]
 
 git add .
 git commit -m "
-git push
+git push origin [branch_name]
 
 3. Merge the branch
 
@@ -28,6 +28,35 @@ git push origin master
 
 git branch -d [name_of_your_new_branch]
 git push origin --delete test_branch
+
+
+
+########## Creating a branch, committing to it, and merging (wit a PR) ##########
+
+
+1. Create a new branch & push it to github
+
+git checkout -b [name_of_your_new_branch]
+git push origin [name_of_your_new_branch]
+
+2. Make a commit
+
+git add .
+git commit -m "
+git push origin [branch_name]
+
+3. Merge the branch
+
+git checkout master
+git pull origin master
+git merge test
+git push origin master
+
+4. Delete the branch
+
+git branch -d [name_of_your_new_branch]
+git push origin --delete test_branch
+
 
 
 
