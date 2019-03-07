@@ -3,30 +3,73 @@ https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-man
 https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork
 
 
-1. Create a new branch (can also be used to move between branches / master)
+########## Creating a branch, committing to it, and merging ##########
+
+
+1. Create a new branch & push it to github
 
 git checkout -b [name_of_your_new_branch]
+git push origin [name_of_your_new_branch]
+
+2. Make a commit
+
+git add .
+git commit -m "
+git push
+
+3. Merge the branch
+
+git checkout master
+git pull origin master
+git merge test
+git push origin master
+
+4. Delete the branch
+
+git branch -d [name_of_your_new_branch]
+git push origin --delete test_branch
+
+
+
+
+
+########## Pull a new repo ##########
+git clone [link_to_repo]
+
+
+
+
+########## ARCHIVE ##########
+
+
+1. Create a new branch (can also be used to move between branches / master)
+
+    git checkout -b [name_of_your_new_branch]
 
 2. Push the branch to github
 
-git push origin [name_of_your_new_branch]
+    git push origin [name_of_your_new_branch]
 
 3. See a list of branches
 
-git branch -a
+    git branch -a
 
-4. Push a commit on a branch
+4. Move back to master branch (or back to a branch)
 
-git push origin [name_of_branch]
+    git checkout [name_of_branch]
 
-5. Merge a branch
+5. Push a commit on a branch
 
-git merge [name_of_branch]/develop
+    git push origin [name_of_branch]
 
-6. Delete a branch 
+6. Merge a branch
 
-git branch -D [name_of_your_new_branch]
+    git merge [name_of_branch]/develop
 
-7. Delete branch on Github
+7. Delete a branch 
 
-git push origin :[name_of_your_new_branch]
+    git branch -D [name_of_your_new_branch]
+
+8. Delete branch on Github
+
+    git push origin :[name_of_your_new_branch]
