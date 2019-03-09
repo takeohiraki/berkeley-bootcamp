@@ -18,25 +18,55 @@ header {
 }
 
 section {
+  padding: 10px;
 }
 
 #left {
+  background-color: #666;
+  float: left;
+  width: 33.33%;
 }
 
 #middle {
+  background-color: #888;
+  float: left;
+  width: 33.33%;
 }
 
 #right {
+  background-color: #666;
+  float: left;
+  width: 33.33%;
 }
 
 #full {
+  border: solid 1px red; 
 }
 
 #division {
+  background-color: #6ea3da;
+  padding: 10px;
+  /* float: left; */
 }
 
 aside {
+  background-color: #fff;
+  height: 150px;
+  width: 150px;
+  border: solid 1px red; 
+  float: left;
 }
 
 footer {
+  background-color: #ccc;
+  padding: 10px;
+}
+
+/* clearfix is applied to the parent container to 'fix' the flow of the page */
+
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }

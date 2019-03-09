@@ -1,0 +1,35 @@
+.content {
+    margin: auto; 
+    width: 1000px;
+}
+  
+#box1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* height: 100px; */
+    background: hsl(133, 60%, 44%);
+    text-align: center;
+    padding: 25px;
+  }
+  
+
+#box2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: blue;
+    text-align: center;
+    padding: 75px;
+  }
+  
+#box3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: yellow;
+    right: -20px;
+    bottom: 10px;
+    text-align: center;
+    padding: 25px;
+  }

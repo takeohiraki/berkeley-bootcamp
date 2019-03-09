@@ -5,7 +5,13 @@
 
 
  #head_type {
-  margin-left: 40px;
+  /*margin-left: 40px;*/
+}
+
+#content {
+  margin: auto; 
+  border: solid 1px red; 
+  width:50%;
 }
 
 
@@ -13,6 +19,7 @@
 
 .content1 {
   float: left;
+  
 }
 
 
@@ -20,8 +27,9 @@
 
 .content2 {
   float: left;
-  width: 325px;
-  margin-left: 25px;
+  width: 350px;
+  margin-left: 20px;
+  /*margin-left: 10px;*/
 }
 
 .copyright {
