@@ -68,12 +68,18 @@ git push origin --delete test_branch
 
 
 
-
-
-
-
 ########## Pull a new repo ##########
 git clone [link_to_repo]
+
+
+########## Cancel an attempted merge ##########
+git merge --abort
+
+########## Fix a merge conflict ##########
+# If person A & B both work on a branch, but A merges first with changes to files B is working on, and B needs to undo their changes and pull the new changes
+git fetch origin
+git reset --hard origin/[branch]
+
 
 
 
