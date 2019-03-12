@@ -1,8 +1,10 @@
 
 https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
 https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork
+https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
-
+Branch strategy:
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
 
 ########## Creating a branch, committing to it, and merging (without a PR) ##########
