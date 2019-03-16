@@ -1,0 +1,56 @@
+.button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.button1:hover {
+    color: #FF00FF;
+}
+.button2:focus {
+    color: #FF00FF;
+    background: black;
+}
+
+
+
+.button2 {
+    background-color: yellow; /* Green */
+    border: none;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.button3 {
+    background-color: grey; /* Green */
+    border: none;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+
+a:hover {
+    color: green;
+ }
+
+a {
+    color: blue;
+ }
+
+a:visited {
+    background-color: purple;
+ }

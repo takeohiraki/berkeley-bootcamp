@@ -1,0 +1,25 @@
+
+
+.bold {
+    font-weight: bold;    
+}
+
+.large_font {
+    font-size: 24px;
+}
+
+.large_line_height {
+    line-height: 50px;
+}
+
+.roboto {
+    font-family: Roboto, serif;
+}
+
+.raleway {
+    font-family: Raleway, serif;
+}
+
+p {
+    font-family: Roboto, serif;
+}

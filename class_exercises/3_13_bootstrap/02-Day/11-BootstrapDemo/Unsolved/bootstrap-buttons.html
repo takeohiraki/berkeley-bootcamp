@@ -1,0 +1,97 @@
+<!-- Bootstrap Exercise -->
+
+<!-- Students: 
+ Working with someone closest to you:
+
+    1. Navigate to the Bootstrap website.
+
+    2. Copy the link to the Bootstrap CSS file into one of your old HTML files.
+
+    3. Look through the Bootstrap CSS or Components list and incorporate at least three Bootstrap elements onto your page.
+
+    4. Slack a screenshot of your page to your section’s channel when you are done.
+
+    5. Hint: First include a link to Bootstrap’s CSS. Then visit the Bootstrap page on CSS or Components. 
+
+  IMPORTANT: If you finish early, let the TAs know so you can be sent to help others around you.
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Bootstrap DemoButtons</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  
+</head>
+<div class="content">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">AirFair</a> -->
+        <a class="navbar-brand" href="#">
+            <img src="http://pluspng.com/img-png/airbnb-logo-png--880.png" id="logo" alt="">
+          </a>
+
+        <button class="navbar-toggler" navbar-toggler-right type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Host a home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Host an experience <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign up <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log in <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+
+  <body>
+    <div class="jumbotron" class="shadow-sm p-3 mb-5 bg-white rounded">
+        <h1 class="display-8">Book unique homes and experiences</h1>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">WHERE</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">CHECK IN</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">GUEST</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
