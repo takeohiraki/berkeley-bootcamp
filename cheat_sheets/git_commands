@@ -85,6 +85,35 @@ git reset --hard origin/[branch]
 
 
 
+#################### Github pages ####################
+
+
+
+########## Step 1: Create the repo ##########
+
+1. Create a new repo in Github + initialize with a README.md
+2. Name the repo [something]
+3. Clone the repo into local and navigate inside of it
+
+########## Step 2: Setup initial files ##########
+
+4. Create an index.html file in the repo <-- required for the deploy to know where to start
+5. Push the changes to master:
+  - git add .
+  - git commit -m "inserting index.html"
+  - git push origin master
+
+########## Step 3: Deploy ##########
+
+6. Go to Github --> repo --> settings and change the name of the repo to [something].github.io
+7. Change Source --> master branch
+
+Check the link works correctly
+  - link format is always https://[username].github.io/[something]
+
+
+
+
 
 ########## ARCHIVE ##########
 

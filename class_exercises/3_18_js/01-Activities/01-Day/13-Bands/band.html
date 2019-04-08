@@ -1,0 +1,51 @@
+<!-- ### File
+
+* *None*
+
+### Instructions
+
+* Create a website that accomplishes the following:
+
+  * Create an array of your favorite bands.
+
+  * With a prompt, ask the user's favorite band.
+
+  * If it's one of your favorites, alert: "YEAH I LOVE THEM!"
+
+  * If it's not, alert: "Nah. They're pretty lame."
+
+  * **HINT:**  You will need to research how to use `.indexOf()`.
+
+  * **HINT:** You will need to research how to use `.toLowerCase()`.
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Data Types, User Input, Conditional Logic
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    // Create an array
+    var bands = ["halsey", "odesza", "avicii", "vallis Alps"];
+    var userFavBand = prompt("What's your favorite band?").toLowerCase();
+
+    console.log(userFavBand)
+    console.log(bands.indexOf(userFavBand.toLowerCase()) !== -1)
+
+    if (bands.indexOf(userFavBand) !== -1) {
+        alert("YEAH I LOVE THEM");
+    }
+    else {
+        alert("Nah. They're pretty lame");
+    }
+    </script>
+  </body>
+</html>
+
+

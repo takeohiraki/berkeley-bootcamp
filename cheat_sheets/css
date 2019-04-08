@@ -1,0 +1,36 @@
+* {
+    width: 960px;
+    margin: auto;  
+    background-position: center top;
+    background-color: #ffffff;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 1000px;
+    height: 700px;
+    background-size: auto 100%;
+    margin: auto;
+    background-image: url("https://a0.muscache.com/4ea/air/r:w775-h518-sfit,e:fjpg-c80/pictures/0ffd8594-f123-43f0-85bb-7ef88c6f0624.jpg");
+    align-content: right;
+    font-weight: bold; 
+    opacity: 100%;
+    font-size: 24px;
+    line-height: 50px;
+    border: solid 1px red; 
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }

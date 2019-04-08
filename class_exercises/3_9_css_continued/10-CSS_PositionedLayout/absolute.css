@@ -19,7 +19,7 @@
 
 /* Box rules: percentages define anchors (i.e. position of each box relative to enclosing box) */
 
-#box-1 {
+.box-1 {
   top: 6%;
   left: 2%;
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+
+    <h1>Question game</h1>
+    <h2>Input "t" for TRUE and "f" for FALSE </h2>
+    <h2>Question: <span id="question"><strong> </strong></span></h2>
+    
+    <script>
+
+
+var questions = [
+    {q: "the sky is blue.", a: "t"},
+    {q: "There are 365 days in a year.", a: "t"},
+    {q: "SF is 7x7 miles.", a: "f"},
+    {q: "There are less than 40 starbucks in SF.", a: "f"},
+    {q: "Flying from SF to DC takes at least 5 hours.", a: "t"},
+];
+
+/* console.log(questions[3].a) */
+
+document.onkeyup = function(event) {
+
+    for(var i = 0; i < questions.length; i++) {
+        question.textContent = questions[i].q;
+        var letter = event.key.toLowerCase();
+        console.log(letter == questions[i].a);
+
+    }
+    // Captures the key press, converts it to lowercase, and saves it to a variable.
+    
+
+
+};
+
+</script>
+
+</body>
+</html>

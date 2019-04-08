@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="jumbotron">
+            <h2>Select 'r' for rock, 'p' for paper, or 's' for scissors</h2>
+            <br>
+            <h2>User Score: <span id="user-score"><strong>0</strong></span></h2>
+            <h2>Computer Score: <span id="computer-score"><strong>0</strong></span></h2>
+          </div>
+          <br> 
+          <button type="button" class="btn btn-primary btn-lg" onclick="resetScore()">Reset Score</button>
+        </div>
+      </div>
+    </div>
+
+  <div id="game">
+
+  </div>
+
+  <script type="text/javascript">
+
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var computerChoices = ["r", "p", "s"];
+
+    // Sets the initial user and computer scores
+    var userScore = 0;
+    var computerScore = 0;
+
+    // Gets the value from the html for the scores
+    var userScoreView = document.getElementById("user-score");
+    var computerScoreView = document.getElementById("computer-score");
+
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
+
+      // Determines which key was pressed.
+      var userGuess = event.key;
+
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+      // Alerts the key the user pressed (userGuess).
+      alert("User guess: " + userGuess);
+
+      // Alerts the Computer's guess.
+      alert("Computer guess: " + computerGuess);
+
+      if(userGuess == 'r'||userGuess =='p'||userGuess=="s"){
+        evaluator(userGuess, computerGuess);
+      }
+      else {
+        alert("You didn't choose a valid option. Next time, choose 'r', 'p', or 's'");
+      }
+    }
+
+    // This function evaluates who wins
+    function evaluator(player1, player2) {
+        if(player1==player2) {
+          alert("You tied!");
+        }
+        else if(player1=="p"&&player2=="r") {
+          win(player1, player2);
+        }
+        else if(player1=="r"&&player2=="s") {
+          win(player1, player2);
+        }
+        else if(player1=="s"&&player2=="p") {
+          win(player1, player2);
+        }
+        else {
+          lose(player1, player2);
+      }
+    }
+
+    // This function is called to provide the win message and change the score
+    function win(attempt1, attempt2) {
+      userScore = userScore + 1;
+      console.log(userScore);
+      alert("You win! User: " + attempt1 + " beats Computer: " + attempt2);
+      userScoreView.textContent = userScore;
+    }
+
+    // This function is called to provide the lose message and change the score
+    function lose(attempt1, attempt2) {
+      computerScore = computerScore + 1;
+      console.log(computerScore);
+      alert("You lose! Computer: " + attempt2 + " beats User: " + attempt1);
+      computerScoreView.textContent = computerScore;
+    }
+
+    // This function resets the score to zero
+    function resetScore() {
+      userScore = 0;
+      userScoreView.textContent = userScore;
+      computerScore = 0;
+      computerScoreView.textContent = computerScore;
+    }
+  </script>
+
+</body>
+
+</html>
+

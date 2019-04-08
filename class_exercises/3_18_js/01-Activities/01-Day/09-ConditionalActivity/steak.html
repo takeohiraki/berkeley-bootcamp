@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Data Types, User Input, Conditional Logic
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var date = new Date();
+      var likeSteak = confirm("Do you eat steak");
+
+      if (likeSteak) {
+        document.write("Here's a steak sandwich." + "<br>" + "<br>");
+      }
+      else {
+        document.write("Here’s a Tofu Stir-Fry!");
+      }
+
+      var birthYear = prompt("What year were you born?");
+      if (date.getFullYear() - birthYear < 22) {
+        document.write("No Sake for you!");
+      }
+      else {
+        document.write("Here’s some Sake!");
+      }
+
+    </script>
+  </body>
+</html>

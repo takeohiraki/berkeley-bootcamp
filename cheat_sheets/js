@@ -1,0 +1,56 @@
+/*
+alert:      show user a message 
+confirm:    user needs to select yes or no
+prompt:     user needs to input a written response
+*/
+
+
+/* Log a value to the console */
+console.log(Teacher);
+
+
+/* Alert */
+  alert("Oooh NICE");
+
+/* Create HTML */
+
+  document.write("No Sake for you!");
+
+
+/* If */
+if(myFarm[i][0]=="c"){
+    alert("Starts with 'c' or 'o'!");
+    console.log(myFarm[i]);  
+    document.write("It's a C" + "<br>");
+}
+else if(myFarm[i][0]=="o") {
+    alert("Starts with 'c' or 'o'!");
+    console.log(myFarm[i]);  
+    document.write("It's an O" + "<br>");
+}
+else {
+    document.write("Neither C nor O" + "<br>");
+}
+
+
+/* For */
+for(var i = 0; i < myFarm.length; i++) {
+    console.log(myFarm[i]);  
+}
+
+
+/* Function */
+function logArray(list) {
+    for (var j = 0; j<list.length; j++){
+      console.log(list([j]));
+    }
+  }
+
+
+  function logItems(array){
+      for (var i = 0; i < array.length; i++) {
+          console.log(array[i]);
+      }
+  }
+
+  logItems(zooAnimals);
